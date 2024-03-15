@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/style.css">
   <script src="https://kit.fontawesome.com/6bdc63e110.js" crossorigin="anonymous"></script>
-
+  <style>
+    .card:hover{
+      background-color: #252525;
+    }
+  </style>
     <title>Music Player</title>
 </head>
 <body class="bg-black text-white">
@@ -62,18 +66,154 @@
       <!-- Right Portion Start  -->
       
   <div class="right h-full w-[75vw] bg-[#121212] min-h-[100vh] ml-3 rounded-md">
-        <nav class=" w-[75vw] flex   bg-[#272626] py-4 px-1 rounded-lg h-[10vh] items-center">
-          <div class="gap-1 ml-2">
-             <i class="fa-light fa-less-than text-2xl font-extralight"></i>
-             <i class="fa-light fa-greater-than text-2xl font-extralight"></i>
-          </div>
-          <div class=" px-2 absolute right-3">
-            <button class=" mx-3 py-1 px-2 text-slate-300 text-xl font-semibold hover:font-bold hover:scale-110 hover:text-white  hover:border-none">Signup</button>
-             <button class="rounded-3xl border mx-3  p-2 w-[6.5rem] text-black font-semibold text-xl  bg-white hover:scale-105">Login</button>
-          </div>
-        </nav>
-        <div class="card">hello</div>
-        
+
+    <!-- Navbar section Starts  -->
+    <nav class=" w-[75vw] flex   bg-[#272626] py-4 px-1 rounded-lg h-[10vh] items-center">
+      <div class="gap-1 ml-2">
+        <i class="fa-light fa-less-than text-2xl font-extralight"></i>
+        <i class="fa-light fa-greater-than text-2xl font-extralight"></i>
+      </div>
+      <div class=" px-2 absolute right-3">
+        <button class=" mx-3 py-1 px-2 text-slate-300 text-xl font-semibold hover:font-bold hover:scale-110 hover:text-white  hover:border-none">Signup</button>
+        <button class="rounded-3xl border mx-3  p-2 w-[6.5rem] text-black font-semibold text-xl  bg-white hover:scale-105">Login</button>
+      </div>
+    </nav>
+    <!-- Navbar section Ends  -->
+
+    <!-- Playlist section Starts  -->
+    
+  <div class="playlist ml-6">
+    <h1 class="font-bold text-2xl py-3 hover:underline">Spotify Playlist</h1>
+    <div class="flex overflow-y-scroll flex-wrap justify-evenly gap-4">
+      <!-- card Structure  -->
+      
+      <div class="card relative rounded-md w-52 bg-[#1a1a1a] h-auto py-3 flex flex-col items-center overflow-hidden group ">
+        <!-- Hidden play button -->
+        <img src="./assets/playbtn.png" alt="play" class="w-10 absolute bottom-[-64px] right-[21px] opacity-0 transition-opacity duration-300 group-hover:opacity-100 hover:scale-110 group-hover:bottom-24">
+        <img src="https://images.pexels.com/photos/3693111/pexels-photo-3693111.jpeg?auto=compress&cs=tinysrgb&w=600" alt="internet" class="w-44 h-44 rounded-lg my-2">
+        <h2 class="font-medium text-xl mt-2">Classical 90's</h2>
+        <p class="text-[#b3b3b3]">sanam , sonu nigam </p>
+      </div>
+
+      <div class="card relative rounded-md w-52 bg-[#1a1a1a] h-auto py-3 flex flex-col items-center overflow-hidden group">
+        <!-- Hidden play button -->
+        <img src="./assets/playbtn.png" alt="play" class="w-10 absolute bottom-[-64px] right-[21px] opacity-0 transition-opacity duration-300 group-hover:opacity-100 hover:scale-110 group-hover:bottom-24">
+        <img src="https://images.pexels.com/photos/3693111/pexels-photo-3693111.jpeg?auto=compress&cs=tinysrgb&w=600" alt="internet" class="w-44 h-44 rounded-lg my-2">
+        <h2 class="font-medium text-xl mt-2">Classical 90's</h2>
+        <p class="text-[#b3b3b3]">sanam , sonu nigam </p>
+      </div>
+
+      <div class="card relative rounded-md w-52 bg-[#1a1a1a] h-auto py-3 flex flex-col items-center overflow-hidden group">
+        <!-- Hidden play button -->
+        <img src="./assets/playbtn.png" alt="play" class="w-10 absolute bottom-[-64px] right-[21px] opacity-0 transition-opacity duration-300 group-hover:opacity-100 hover:scale-110 group-hover:bottom-24">
+        <img src="https://images.pexels.com/photos/3693111/pexels-photo-3693111.jpeg?auto=compress&cs=tinysrgb&w=600" alt="internet" class="w-44 h-44 rounded-lg my-2">
+        <h2 class="font-medium text-xl mt-2">Classical 90's</h2>
+        <p class="text-[#b3b3b3]">sanam , sonu nigam </p>
+      </div>
+
+      <div class="card relative rounded-md w-52 bg-[#1a1a1a] h-auto py-3 flex flex-col items-center overflow-hidden group">
+        <!-- Hidden play button -->
+        <img src="./assets/playbtn.png" alt="play" class="w-10 absolute bottom-[-64px] right-[21px] opacity-0 transition-opacity duration-300 group-hover:opacity-100 hover:scale-110 group-hover:bottom-24">
+        <img src="https://images.pexels.com/photos/3693111/pexels-photo-3693111.jpeg?auto=compress&cs=tinysrgb&w=600" alt="internet" class="w-44 h-44 rounded-lg my-2">
+        <h2 class="font-medium text-xl mt-2">Classical 90's</h2>
+        <p class="text-[#b3b3b3]">sanam , sonu nigam </p>
+      </div>
+
+      <div class="card relative rounded-md w-52 bg-[#1a1a1a] h-auto py-3 flex flex-col items-center overflow-hidden group">
+        <!-- Hidden play button -->
+        <img src="./assets/playbtn.png" alt="play" class="w-10 absolute bottom-[-64px] right-[21px] opacity-0 transition-opacity duration-300 group-hover:opacity-100 hover:scale-110 group-hover:bottom-24">
+        <img src="https://images.pexels.com/photos/3693111/pexels-photo-3693111.jpeg?auto=compress&cs=tinysrgb&w=600" alt="internet" class="w-44 h-44 rounded-lg my-2">
+        <h2 class="font-medium text-xl mt-2">Classical 90's</h2>
+        <p class="text-[#b3b3b3]">sanam , sonu nigam </p>
+      </div>
+
+      <div class="card relative rounded-md w-52 bg-[#1a1a1a] h-auto py-3 flex flex-col items-center overflow-hidden group">
+        <!-- Hidden play button -->
+        <img src="./assets/playbtn.png" alt="play" class="w-10 absolute bottom-[-64px] right-[21px] opacity-0 transition-opacity duration-300 group-hover:opacity-100 hover:scale-110 group-hover:bottom-24">
+        <img src="https://images.pexels.com/photos/3693111/pexels-photo-3693111.jpeg?auto=compress&cs=tinysrgb&w=600" alt="internet" class="w-44 h-44 rounded-lg my-2">
+        <h2 class="font-medium text-xl mt-2">Classical 90's</h2>
+        <p class="text-[#b3b3b3]">sanam , sonu nigam </p>
+      </div>
+
+      <div class="card relative rounded-md w-52 bg-[#1a1a1a] h-auto py-3 flex flex-col items-center overflow-hidden group">
+        <!-- Hidden play button -->
+        <img src="./assets/playbtn.png" alt="play" class="w-10 absolute bottom-[-64px] right-[21px] opacity-0 transition-opacity duration-300 group-hover:opacity-100 hover:scale-110 group-hover:bottom-24">
+        <img src="https://images.pexels.com/photos/3693111/pexels-photo-3693111.jpeg?auto=compress&cs=tinysrgb&w=600" alt="internet" class="w-44 h-44 rounded-lg my-2">
+        <h2 class="font-medium text-xl mt-2">Classical 90's</h2>
+        <p class="text-[#b3b3b3]">sanam , sonu nigam </p>
+      </div>
+
+      <div class="card relative rounded-md w-52 bg-[#1a1a1a] h-auto py-3 flex flex-col items-center overflow-hidden group">
+        <!-- Hidden play button -->
+        <img src="./assets/playbtn.png" alt="play" class="w-10 absolute bottom-[-64px] right-[21px] opacity-0 transition-opacity duration-300 group-hover:opacity-100 hover:scale-110 group-hover:bottom-24">
+        <img src="https://images.pexels.com/photos/3693111/pexels-photo-3693111.jpeg?auto=compress&cs=tinysrgb&w=600" alt="internet" class="w-44 h-44 rounded-lg my-2">
+        <h2 class="font-medium text-xl mt-2">Classical 90's</h2>
+        <p class="text-[#b3b3b3]">sanam , sonu nigam </p>
+      </div>
+
+      <div class="card relative rounded-md w-52 bg-[#1a1a1a] h-auto py-3 flex flex-col items-center overflow-hidden group">
+        <!-- Hidden play button -->
+        <img src="./assets/playbtn.png" alt="play" class="w-10 absolute bottom-[-64px] right-[21px] opacity-0 transition-opacity duration-300 group-hover:opacity-100 hover:scale-110 group-hover:bottom-24">
+        <img src="https://images.pexels.com/photos/3693111/pexels-photo-3693111.jpeg?auto=compress&cs=tinysrgb&w=600" alt="internet" class="w-44 h-44 rounded-lg my-2">
+        <h2 class="font-medium text-xl mt-2">Classical 90's</h2>
+        <p class="text-[#b3b3b3]">sanam , sonu nigam </p>
+      </div>
+
+      <div class="card relative rounded-md w-52 bg-[#1a1a1a] h-auto py-3 flex flex-col items-center overflow-hidden group">
+        <!-- Hidden play button -->
+        <img src="./assets/playbtn.png" alt="play" class="w-10 absolute bottom-[-64px] right-[21px] opacity-0 transition-opacity duration-300 group-hover:opacity-100 hover:scale-110 group-hover:bottom-24">
+        <img src="https://images.pexels.com/photos/3693111/pexels-photo-3693111.jpeg?auto=compress&cs=tinysrgb&w=600" alt="internet" class="w-44 h-44 rounded-lg my-2">
+        <h2 class="font-medium text-xl mt-2">Classical 90's</h2>
+        <p class="text-[#b3b3b3]">sanam , sonu nigam </p>
+      </div>
+
+      <div class="card relative rounded-md w-52 bg-[#1a1a1a] h-auto py-3 flex flex-col items-center overflow-hidden group">
+        <!-- Hidden play button -->
+        <img src="./assets/playbtn.png" alt="play" class="w-10 absolute bottom-[-64px] right-[21px] opacity-0 transition-opacity duration-300 group-hover:opacity-100 hover:scale-110 group-hover:bottom-24">
+        <img src="https://images.pexels.com/photos/3693111/pexels-photo-3693111.jpeg?auto=compress&cs=tinysrgb&w=600" alt="internet" class="w-44 h-44 rounded-lg my-2">
+        <h2 class="font-medium text-xl mt-2">Classical 90's</h2>
+        <p class="text-[#b3b3b3]">sanam , sonu nigam </p>
+      </div>
+
+      <div class="card relative rounded-md w-52 bg-[#1a1a1a] h-auto py-3 flex flex-col items-center overflow-hidden group">
+        <!-- Hidden play button -->
+        <img src="./assets/playbtn.png" alt="play" class="w-10 absolute bottom-[-64px] right-[21px] opacity-0 transition-opacity duration-300 group-hover:opacity-100 hover:scale-110 group-hover:bottom-24">
+        <img src="https://images.pexels.com/photos/3693111/pexels-photo-3693111.jpeg?auto=compress&cs=tinysrgb&w=600" alt="internet" class="w-44 h-44 rounded-lg my-2">
+        <h2 class="font-medium text-xl mt-2">Classical 90's</h2>
+        <p class="text-[#b3b3b3]">sanam , sonu nigam </p>
+      </div>
+
+      <div class="card relative rounded-md w-52 bg-[#1a1a1a] h-auto py-3 flex flex-col items-center overflow-hidden group">
+        <!-- Hidden play button -->
+        <img src="./assets/playbtn.png" alt="play" class="w-10 absolute bottom-[-64px] right-[21px] opacity-0 transition-opacity duration-300 group-hover:opacity-100 hover:scale-110 group-hover:bottom-24">
+        <img src="https://images.pexels.com/photos/3693111/pexels-photo-3693111.jpeg?auto=compress&cs=tinysrgb&w=600" alt="internet" class="w-44 h-44 rounded-lg my-2">
+        <h2 class="font-medium text-xl mt-2">Classical 90's</h2>
+        <p class="text-[#b3b3b3]">sanam , sonu nigam </p>
+      </div>
+
+      <div class="card relative rounded-md w-52 bg-[#1a1a1a] h-auto py-3 flex flex-col items-center overflow-hidden group">
+        <!-- Hidden play button -->
+        <img src="./assets/playbtn.png" alt="play" class="w-10 absolute bottom-[-64px] right-[21px] opacity-0 transition-opacity duration-300 group-hover:opacity-100 hover:scale-110 group-hover:bottom-24">
+        <img src="https://images.pexels.com/photos/3693111/pexels-photo-3693111.jpeg?auto=compress&cs=tinysrgb&w=600" alt="internet" class="w-44 h-44 rounded-lg my-2">
+        <h2 class="font-medium text-xl mt-2">Classical 90's</h2>
+        <p class="text-[#b3b3b3]">sanam , sonu nigam </p>
+      </div>
+
+      <div class="card relative rounded-md w-52 bg-[#1a1a1a] h-auto py-3 flex flex-col items-center overflow-hidden group">
+        <!-- Hidden play button -->
+        <img src="./assets/playbtn.png" alt="play" class="w-10 absolute bottom-[-64px] right-[21px] opacity-0 transition-opacity duration-300 group-hover:opacity-100 hover:scale-110 group-hover:bottom-24">
+        <img src="https://images.pexels.com/photos/3693111/pexels-photo-3693111.jpeg?auto=compress&cs=tinysrgb&w=600" alt="internet" class="w-44 h-44 rounded-lg my-2">
+        <h2 class="font-medium text-xl mt-2">Classical 90's</h2>
+        <p class="text-[#b3b3b3]">sanam , sonu nigam </p>
+      </div>
+    </div> 
+      
+      <!-- card Structure ends -->
+
+  </div>
+    
+    <!-- Playlist section Ends  -->
+
       <!-- Right Portion Ends -->
 
   </div>
