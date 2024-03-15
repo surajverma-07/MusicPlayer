@@ -1,0 +1,27 @@
+
+.card:hover{
+  background-color: #252525;
+}
+
+/* dark scrolling  */
+/* For WebKit (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #333; /* Color of the track */
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #555; /* Color of the scroll thumb */
+    border-radius: 5px; /* Border radius of the scroll thumb */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #777; /* Color of the scroll thumb on hover */
+  }
+  
