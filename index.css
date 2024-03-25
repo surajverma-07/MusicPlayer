@@ -25,3 +25,18 @@
     background: #777; /* Color of the scroll thumb on hover */
   }
   
+  .songList ul li{
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    align-items: center;
+    gap: 40px;
+    border-radius: 6px;
+   padding: 10px 15px; 
+  }
+  .playnow{
+    gap: 12px;
+    display: flex;
+    align-items: center;
+  }
