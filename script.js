@@ -28,7 +28,21 @@ async function main(){
   let songUL = document.querySelector(".songList").getElementsByTagName("ul")[0];
   
   for (const song of songs) {
-     songUL.innerHTML = songUL.innerHTML + `<li>${song.replaceAll("%20"," ")}</li>`;
+     songUL.innerHTML = songUL.innerHTML + `<li class="">
+     <i class="fa-solid fa-music fa-lg " style="color: #ffffff;"></i>
+     <div class="songinfo ">
+         <div class="songname">
+            ${song.replaceAll("%20"," ")}
+         </div>
+         <div class="songArtist">
+            songArtist
+         </div>
+     </div>
+     <div class="playnow ">
+           <p>play now</p>
+           <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+     </div>
+   </li>`
   }
 
    // Play the first song
