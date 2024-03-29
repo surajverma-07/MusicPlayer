@@ -1,4 +1,5 @@
 console.log("lets write javaScript");
+let currentSong = new Audio();
 
 // Fetching songs from localhost ...
 async function getSongs(){
@@ -20,10 +21,20 @@ async function getSongs(){
    return songs
 }
 
+const playMusic = (track) =>{
+   // let audio = new Audio("/songs/"+track);
+   currentSong.src = "/songs/"+track;
+   currentSong.play();
+   play.src = "./assets/pause.svg"
+   document.querySelector(".songinform").innerHTML = track
+   document.querySelector(".songtime").innerHTML = "00:00 / 00:00 "
+}
+
 async function main(){ 
+
    // fetch song in list 
    let songs = await getSongs()
-   console.log(songs);
+   // console.log(songs);
 
   let songUL = document.querySelector(".songList").getElementsByTagName("ul")[0];
   
@@ -46,13 +57,29 @@ async function main(){
   }
 
    // Play the first song
-   var audio = new Audio(songs[0]);
-   // audio.play();
+  
 
-   audio.addEventListener("loadeddata" , ()=>{
-      console.log(audio.duration,audio.currentSrc,audio.currentTime);
-   });
+   //attach an eventlistner to each song 
+   Array.from(document.querySelector(".songList").getElementsByTagName("li")).forEach((e)=>{
+       e.addEventListener("click", element =>{
+          playMusic(e.querySelector(".songinfo").firstElementChild.innerHTML.trim())
+          console.log(e.querySelector(".songinfo").firstElementChild.innerHTML.trim())
+         })
+   })
 
+   //Attach an event listner to play next and prev
+   let play = document.getElementById("play")
+   play.addEventListener("click", ()=>{
+      if(currentSong.paused ){
+         currentSong.play()
+         play.src = "./assets/pause.svg"
+      }
+      else{
+         currentSong.pause();
+         play.src = "./assets/resume.svg"
+      }
+   })
+ 
 }
 
 main()

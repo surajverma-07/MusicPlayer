@@ -45,3 +45,7 @@
     position: absolute;
     right : 25px ;
   }
+  .circle{
+    transition: left 0.5s;
+    left: 0%;
+  }
